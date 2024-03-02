@@ -9,28 +9,51 @@
             font-family: 'Courier New', monospace;
             margin: 0;
             padding: 0;
-            background-color: #AEDAF3;
+            background-color: #ffcc00;
             color: #ff00ff;
         }
         header {
             background-color: #0099cc;
-            color: #ffcc00;
             padding: 20px;
             text-align: center;
-            font-size: 30px;
             font-family: 'Papyrus', fantasy;
         }
+
+        h1 {
+            color: #ffcc00;
+            font-size: 30px;
+            animation: tilt 3s ease-in-out infinite alternate;
+        }
+
+        h2 {
+            color: #ffcc00;
+            font-size: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: marquee 25s linear infinite;
+        }
+
+        @keyframes tilt {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
         main {
             padding: 20px;
             font-family: 'Comic Sans MS', cursive, sans-serif;
             font-size: 18px;
         }
         footer {
-            background-color: #0099cc; 
-            color: #ffcc00; 
+            background-color: #0099cc;
+            color: #ffcc00;
             text-align: center;
             padding: 10px;
-            font-family: 'Arial Black', sans-serif; 
+            font-family: 'Arial Black', sans-serif;
         }
         .fun-image {
             display: block;
@@ -42,12 +65,13 @@
 <body>
     <header>
         <h1>Trusty Email</h1>
+        <h2>"Reliable Internet E-mail services since 1994"</h2>
     </header>
     <main>
-        <p>Welcome to <strong>Trusty Email</strong> - your reliable email provider since <strong>1994</strong>!</p>
-        <p>At <strong>Trusty Email</strong>, we understand the importance of reliable communication. That's why we've been dedicated to keeping our customers happy for over two decades.</p>
+        <p>Welcome to <strong>Trusty Email</strong> - your reliable e-mailbox provider since <strong>1994</strong>!</p>
+        <p>At <strong>Trusty Email</strong>, we understand the importance of reliable communication. That's why we've been dedicated to keeping our customers happy for over 8 years.</p>
         <p>With our robust infrastructure and commitment to customer satisfaction, you can trust <strong>Trusty Email</strong> for all your email needs.</p>
-        <img src="trusty.png" alt="Trusty the Envelope" class="fun-image">
+        <img src="trusty.png" alt="trusty the envelope mascot" class="fun-image" width="250">
     </main>
     <footer>
         <p>&copy; 2002 Trusty Email. All rights reserved.</p>
